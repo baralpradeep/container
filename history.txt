@@ -1,0 +1,435 @@
+   84  docker run -it -d pmm
+   85  docker ps
+   86  docker run -it -d pmm bash
+   87  ls
+   88  docker ps
+   89  docker exec -it 455f45e3941d bash
+   90  docker ps
+   91  vi Dockerfile 
+   92  docker stop 
+   93  docker stop 455f45e3941d
+   94  docker image
+   95  docker images
+   96  docker image rm pmm 
+   97  docker image rm pmm  -f 
+   98  docker build -t pmm .
+   99  docker ps
+  100  docker run -it -d pmm bash
+  101  docker ps
+  102  docker exec -it cf1d3152bcbb bash
+  103  docker ps
+  104  docker stop 321771b971d7
+  105  docker ps
+  106  docker stop cf1d3152bcbb
+  107  ls
+  108  vi Dockerfile 
+  109  ls
+  110  docker images
+  111  docker image rm pmm
+  112  docker image rm pmm -f 
+  113  docker build -t pmm .
+  114  docker ps
+  115  vi Dockerfile 
+  116  docker image rm xcc -f 
+  117  docker image rm pmm -f 
+  118  docker images
+  119  docker image rm 9164f6f46949
+  120  docker image rm 9164f6f46949 -f 
+  121  docker build -t pmm .
+  122  cat Dockerfile 
+  123  vi Dockerfile 
+  124  docker images
+  125  docker image rm ab8a86b79e2c
+  126  docker image rm ab8a86b79e2c -f
+  127  docker build -t pmm .
+  128  docker run -it -d pmm bash
+  129  docker ps
+  130  docker stop f1860274cf51
+  131  docker run -p 8081:8081 -name=PMM pmm 
+  132  docker run -p 8081:8081 --name=PMM pmm 
+  133  netstat -an | grep 8081
+  134  ifconfig 
+  135  ifconfig | grep 10
+  136  telnet localhost 8081
+  137  docker ps
+  138  docker run -p 8081:8081 --name=PMM pmm 
+  139  docker 
+  140  docker ps
+  141  docker run -p 8081:8081 --name=PMM pmm 
+  142  docker run -p 8081:8081 --name=xcc  pmm 
+  143  docker ps
+  144  docker run -d -p 8081:8081 --name=xcc  pmm 
+  145  docker run -d -p 8081:8081 --name=lll  pmm 
+  146  docker ps
+  147  docker stop
+  148  docker stop xcc
+  149  docker stop pmm
+  150  docker stop lll
+  151  docker run -it -d pmm
+  152  docker ps
+  153  docker exec -it pmm bash
+  154  history 
+  155  docker run -it -d pmm
+  156  docker ps
+  157  docker run -it -d pmm bash
+  158  docker ps
+  159  docker stop
+  160  docker stop 451dec2f6f0c
+  161  docker run -it -d -p 8081:8081 pmm bash
+  162  telnet localhost 8081
+  163  docker ps
+  164  telnet localhost:8081
+  165  curl localhost:8081
+  166  curl -v localhost:8081
+  167  hostname
+  168  ifconfig 
+  169  docker ps
+  170  docker exec -it b41c9fd38bd0 bash
+  171  history 
+  172  pwd
+  173  triton profile list 
+  174  eval "$(triton env --docker xccqa)"
+  175  docker ps
+  176  ls
+  177  docker build -t xcc_pmm . 
+  178  eval "$(triton env --docker xccqa)"
+  179  docker build -t xcc_pmm . 
+  180  eval "$(triton env --docker xccqa)"
+  181  docker build -t xcc_pmm . 
+  182  eval "$(triton env --docker xccqa)"
+  183  docker ps
+  184  docker images
+  185  docker run -it -d pmm bash
+  186  docker images
+  187  docker build -t xcc_pmm . 
+  188  eval "$(triton env --docker xccqa)"
+  189  triton profile list 
+  190  pwd
+  191  cd xcc
+  192  ls
+  193  cd qa/
+  194  ls
+  195  ls 
+  196  ./las-pim-qa-split-screen.scpt
+  205  cd xcc/qa/
+  206  ls
+  207  ./cmh-pim-qa-split-screen.scpt 
+  216  ls
+  217  ls -lrt
+  218  triton profile list 
+  219  eval "$(triton env --docker xccqa)"
+  220  docker ps
+  221  docker stop ae0ab74070e2
+  222  history | grep docker 
+  223  docker images
+  224   docker run -it -d -p 8081:8081 xcc_pmm --name=cmh-appxcdockerpmm-001  bash
+  225  docker ps
+  226   docker run -it -d -p 8081:8081 xcc_pmm   bash
+  227  docker ps
+  228  docker stop 77dcceb935a1
+  229   docker run -it -d -p 8081:8081 xcc_pmm --name=cmh-appxcdockerpmm-001  bash
+  230  docker ps
+  231   docker run -it -d -p 8081:8081 xcc_pmm --name=cmh-appxcdockerpmm-001  
+  232  docker ps
+  233   docker run --name=cmh-appxcdockerpmm-001 -it -d -p 8081:8081 xcc_pmm bash
+  234  docker ps
+  235  telnet cmh-appxcdockerpmm-001.lbidts.com
+  236  ping cmh-appxcdockerpmm-001.lbidts.com
+  237  nslookup cmh-appxcdockerpmm-001.lbidts.com
+  238  dig grafana.svc.xccqa.cmh-1.cns.lbidts.com
+  239   docker run --name=cmh-appxcdockerpmm-002 -it -d -p 8081:8081 xcc_pmm bash -lables triton.cns.services=xcc-pmm 
+  240  vi docker-compose.yml 
+  241  docker-compose up 
+  242  cat docker-compose.yml 
+  243  vi docker-compose.yml 
+  244  docker-compose up 
+  245  vi docker-compose.yml 
+  246  docker ps
+  247  docker image
+  248  docker images
+  249  vi docker-compose.yml 
+  250  docker-compose up 
+  251  vi docker-compose.yml 
+  252  docker-compose up 
+  253  vi docker-compose.yml 
+  254  docker-compose up 
+  255  vi docker-compose.yml 
+  256  docker-compose up 
+  257  vi docker-compose.yml 
+  258  docker-compose up 
+  259  vi docker-compose.yml 
+  260  docker-compose up 
+  261  cat docker-compose.yml 
+  262  vi docker-compose.yml 
+  263  docker-compose up 
+  264  docker ps
+  265  vi docker-compose.yml 
+  266  docker-compose up 
+  267  vi docker-compose.yml 
+  268  docker-compose up 
+  269  docker ps
+  270  docker images
+  271  docker-compose up 
+  272  docker ps
+  273  docker stop 8decd7e10842 8decd7e10842
+  274  docker-compose up 
+  275  docker ps
+  276  docker stop d761f674c990
+  277  docker ps
+  278  docker-compose up 
+  279  docker ps
+  280  docker ps -a 
+  281  vi docker-compose.yml 
+  282  docker-compose up 
+  283  docker log
+  284  docker logs
+  285  docker logs pbaral_cmh-xcappdockerpmm_1
+  286  docker ps
+  287  vi docker-compose.yml 
+  288  cd xcc/builds/XCC
+  289  ls
+  290  more Dockerfile 
+  291  ls
+  292  cp ~/docker-compose.yml .
+  293  cat docker-compose.yml 
+  294  docker-compose logs -f -t >> myDockerCompose.log
+  295  vi docker-compose.yml 
+  296  docker-compose logs -f -t >> myDockerCompose.log
+  297  ls -lrt
+  298  cat myDockerCompose.log 
+  299  docker-compose up 
+  300  ls -lrt
+  301  docker ps
+  302  triton-docker 
+  303   docker run --name=cmh-appxcdockerpmm-002 -it -d -p 8081:8081 xcc_pmm bash --lable=triton.cns.services=xcc-pmm 
+  304   docker run --name=cmh-appxcdockerpmm-003 -it -d -p 8081:8081 xcc_pmm bash --lable=triton.cns.services=xcc-pmm 
+  305  docker info
+  306  docker ps
+  307  pwd
+  308  ls -lrt
+  309  docker images
+  310  history | grep run 
+  311  docker run -it -d -p 8081:8081 xcc_pmm --name=cmh-appxcdockerpmm-001  bash
+  312  docker ps
+  313  history | grep label
+  314  history | grep name
+  315  docker run --name=cmh-appxcdockerpmm-003 -it -d -p 8081:8081 xcc_pmm bash --label=triton.cns.services=xcc-pmm
+  316  docker ps
+  317  eval "$(triton env --docker xccqa)"
+  318  docker ps
+  319  docker run --name=cmh-appxcdockerpmm-001 -it -d -p 8081:8081 xcc_pmm bash 
+  320  docker ps
+  321  triton inst get 50f5b326bca1
+  322  docker tag
+  323  docker run --name=cmh-appxcdockerpmm-003 -it -d -p 8081:8081 xcc_pmm bash --tags=triton.cns.services=xcc-pmm
+  324  docker run --name=cmh-appxcdockerpmm-001 -it -d -p 8081:8081 xcc_pmm bash --tags=triton.cns.services=xcc-pmm
+  325  docker run --name=cmh-appxcdockerpmm-002 -it -d -p 8081:8081 xcc_pmm bash --tags=triton.cns.services=xcc-pmm
+  326  docker ps
+  327  docker 
+  328  docker ps
+  329  triton inst get 50f5b326-bca1-c5bd-f885-dc14b19ad856
+  330  docker ps 
+  331  docker inspect 50f5b326bca1
+  332  docker inspect 50f5b326bca1 | less
+  333  triton profile list
+  334  eval "$(triton env --docker cmh-mgtbigdata)"
+  335  docker ps
+  347  ls
+  348  mkdir docker
+  349  cd docker
+  350  vi sample_docker_file 
+  351  pwd
+  352  cd 
+  353  cd xcc
+  354  cd builds/
+  355  ls
+  356  cd XCC
+  357  ls
+  358  vi docker-compose.yml 
+  359  mv docker-compose.yml docker-compose.yml.back
+  360  vi docker-compose.yml
+  361  pwd
+  362  docker-compose up -d
+  363  docker ps
+  364  docker images
+  365  vi docker-compose.yml
+  366  docker-compose up -d
+  387  docker compose build 
+  388  docker-compose build 
+  389  docker-compose up -d
+  390  docker ps
+  391  docker image 
+  392  docker image s
+  393  docker images
+  394  ls
+  395  docker-compose up -d
+  396  docker-compose ps
+  397  ls
+  398  vi docker-compose.yml
+  399  cat docker-compose.yml.back 
+  400  vi docker-compose.yml
+  401  docker-compose up -d
+  402  docker ps
+  403  docker image
+  404  docker images
+  405  vi docker-compose.yml
+  406  docker-compose up -d
+  407  docker-compose ps
+  408  vi docker-compose.yml
+  409  docker-compose ps
+  410  docker-compose up -d
+  411  docker-compose ps
+  412  docker-compose logs
+  413  docker-compose ps
+  414  docker ps
+  415  docker ps -a 
+  416  docker ps
+  417  cat docker-compose.yml
+  418  ls
+  419  docker build -t xcc_pmm .
+  420  docker images
+  421  vi docker-compose.yml
+  422  cat docker-compose.yml
+  423  docker-compose up -d
+  424  docker-compose ps
+  425  cat Dockerfile 
+  426  docker ps
+  427  docker exec -it 85953838a089 bash
+  428  docker run --name=cmh-appxcdockerpmm-002 -it -d -p 8081:8081 xcc_pmm bash m
+  429  docker ps
+  430  docker run --name=cmh-appxcdockerpmm-002 -it -d -p 8081:8081 xcc_pmm bash 
+  431  docker ps
+  432  docker run --name=cmh-appxcdockerpmm-003 -it -d -p 8081:8081 xcc_pmm bash
+  433  docker ps
+  434  telnet localhost 8081
+  435  curl localhost:8081
+  436  curl -v localhost:8081
+  437  docker ps
+  438  docker logs
+  439  docker logs c1d045139f8e
+  440  docker logs --help 
+  441  docker logs c1d045139f8e --details
+  442  docker logs c1d045139f8e -f
+  443  cat Dockerfile 
+  444  vi Dockerfile 
+  445  docker build -t xcc_pmm .
+  446  docker run --name=cmh-appxcdockerpmm-003 -it -d -p 8081:8081 xcc_pmm bash
+  447  docker ps
+  448  docker stop c1d045139f8e 
+  449  docker run --name=cmh-appxcdockerpmm-003 -it -d -p 8081:8081 xcc_pmm bash
+  450  docker run --name=cmh-appxcdockerpmm-001 -it -d -p 8081:8081 xcc_pmm bash
+  451  docker ps 
+  452  cat Dockerfile 
+  453  docker -exec it f59160fc448c
+  454  docker exec -it f59160fc448c
+  455  docker exec -it f59160fc448c bash
+  456  vi Dockerfile 
+  457  docker build -t xcc_pmm .
+  458  docker run --name=cmh-appxcdockerpmm-002 -it -d -p 8081:8081 xcc_pmm bash
+  459  docker run --name=cmh-appxcdockerpmm-001 -it -d -p 8081:8081 xcc_pmm bash
+  460  docker run --name=cmh-appxcdockerpmm-004 -it -d -p 8081:8081 xcc_pmm bash
+  461  docker ps
+  462  docker stop f59160fc448c
+  463  docker run --name=cmh-appxcdockerpmm-004 -it -d -p 8081:8081 xcc_pmm bash
+  464  docker run --name=cmh-appxcdockerpmm-005 -it -d -p 8081:8081 xcc_pmm bash
+  465  docker ps
+  466  telnet localhost 8081
+  467  curl localhost:8081
+  468  docker ps
+  469  cat Dockerfile 
+  470  docker ps
+  471  docker exec -it a2fbdbd9ce83
+  472  docker exec -it a2fbdbd9ce83 bash
+  473  docker ps
+  474  docker images 
+  475  cd
+  476  cd xcc/qa/
+  477  ls
+  478  ./cmh-pim-qa-split-screen.scpt 
+  487  cd xcc/qa/
+  488  ./las-pim-qa-split-screen.scpt
+  499  cd /Users/pbaral/xcc/builds/CCM/XCC
+  500  ls
+  501  docker build -t xcc_ccm  .
+  502  vi Dockerfile 
+  503  docker build -t xcc_ccm  .
+  504  vi Dockerfile 
+  505  docker build -t xcc_ccm  .
+  506  docker run --name=cmh-appxcdockerccm-001 -it -d -p 8091:8091 xcc_ccm bash
+  507  docker ps
+  508  docker images
+  509  docker ps
+  510  docker run --name=cmh-appxcdockerccm-001 -it -d -p 8091:8091 xcc_ccm bash
+  511  docker start 6ac628087a
+  512  docker ps
+  513  docker stop a2fbdbd9ce83
+  514  docker start 6ac628087a
+  515  docker ps
+  516  docker rm 6ac628087a3991c
+  517  docker ps -a 
+  518  vi Dockerfile 
+  519  docker build -t xcc_ccm  .
+  520  docker run --name=cmh-appxcdockerccm-002 -it -d -p 8091:8091 xcc_ccm bash
+  521  docker ps
+  522  docker ps -a 
+  523  docker logs b4c665dd3be5
+  524  vi Dockerfile 
+  525  docker build -t xcc_ccm  .
+  526  vi Dockerfile 
+  527  docker build -t xcc_ccm  .
+  528  docker ps
+  529  docker run --name=cmh-appxcdockerccm-003 -it -d -p 8091:8091 xcc_ccm bash
+  530  docker ps
+  531  docker exec -it 3fdc1f9389c2 bash
+  532  vi Dockerfile 
+  533  ls -lrt
+  534  ped
+  535  pwd
+  536  eval "$(triton env --docker xccqa)"
+  537  docker build -t xcc_ccm  .
+  538  docker ps
+  539  docker run --name=cmh-appxcdockerccm-002 -it -d -p 8091:8091 xcc_ccm bash
+  540  docker ps
+  541  docker exec -it 34c91f96bf01 bash 
+  542  pwd
+  543  docker ps
+  544  docker exec -it 34c91f96bf01 bash 
+  545  pwd
+  546  ls -lrt
+  547  mv las-appxcccmqa-004-savedConfig.zip xcc-ccm-savedConfig.zip 
+  548  docker build -t xcc_ccm  .
+  549  docker run --name=cmh-appxcdockerccm-003 -it -d -p 8091:8091 xcc_ccm bash
+  550  pwd
+  551  docker build -t xcc_ccm  .
+  552  docker run --name=cmh-appxcdockerccm-004 -it -d -p 8091:8091 xcc_ccm bash
+  553  docker ps
+  554  docker exec -it 41654a88f5cc bash
+  555  ls
+  556  docker exec -it 41654a88f5cc bash
+  557  docker build -t xcc_ccm  .
+  558  vi Dockerfile 
+  559  docker ps
+  560  docker build -t xcc_ccm  .
+  561  docker ps
+  562  eval "$(triton env --docker xccqa)"
+  563  docker ps
+  564  docker build -t xcc_ccm  .
+  565  docker ps
+  566  docker ps | gpre ccm
+  567  docker ps | grep
+  568  docker ps | grep ccm
+  569  docker exec -it 999d3aab85b0 bash
+  570  docker exec -it a82073669884 bash
+  571  docker ps
+  572  docker exec -it e737d35d37fb bash
+  573  pwd
+  574  cat Dockerfile 
+  575  pwd
+  576  cd 
+  577  cd projects/
+  578  ls
+  579  git clone https://github.com/baralpradeep/container 
+  580  ls -lrt
+  581  cd container/
+  582  ls
+  583  history > history.sh
